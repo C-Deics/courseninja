@@ -1,0 +1,230 @@
+/* styles for index page slide effect */
+.indexWrapper {
+	width: 800px;
+	height: 80vh;
+	text-align: center;
+	margin: 0 auto;
+	overflow-x: hidden;
+	position: relative;
+}
+.indexWrapper .form {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	transition: 0.7s ease;
+}
+.indexWrapper .schoolForm {
+	left: 0;
+	top:30%;
+}
+.indexWrapper .programForm {
+	right: -800px;
+	top:30%;
+	transition-delay: 0.5s;
+}
+
+/* styles for autocomplete effect */
+.autocomplete {
+	position: relative;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: #262626;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+.autocomplete-items div:hover {
+  background-color: #d15039; 
+}
+.autocomplete-active {
+  background-color: #d15039 !important; 
+  color: white; 
+}
+/* GENERAL STYLES */
+html, body, * {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #ffffff;
+	/*background-image: url(/images/school.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed; */
+	color: #000;
+	font-family: 'Karla', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #689775;
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+	font-family:'Khula', sans-serif;
+}
+/*input[type=button], input[type=submit], button {
+	cursor: pointer;
+} */
+input[type=text], textarea, input[type=password] {
+	color: #689775;
+	border: 1px solid #b83b25;
+	border-radius: 3px;
+} 
+nav input, nav a {
+	margin-right: 1em;
+}
+#message, #indexMessageBox {
+	padding-left: 2em;
+	color: red;
+}
+/* -- bootstrap button overwrite -- */
+.btn-primary:hover {
+    color: #fff;
+    background-color: #b83b25;
+    border-color: #b83b25;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem .4rem;
+    font-size: .9rem;
+    line-height: 1.2;
+    border-radius: .3rem;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #d15039;
+    border-color: #d15039;
+}
+/* -- bootstrap button overwrite end -- */
+::-webkit-input-placeholder { 
+  color: #a0a0a0;
+}
+/* Index Page */
+.index {
+	margin-top: 5%;
+}
+.index h1 {
+	text-align: center;
+	margin-bottom: 2%;
+	font-size: 2.6em;
+}
+.index input, {
+	font-size: 1.2em;
+}
+.index input[type=text] {
+	margin-bottom: 0.5%;
+	font-size: 1.5em;
+}
+/* Register Page */
+.register, .reviews, .flag {
+	width: 50vw;
+	text-align: center;
+	margin: 5% auto;
+}
+.register input {
+	display: block;
+	margin: 0.5em auto;
+	font-size: 1.2em;
+}
+/* -- reviews page -- */
+textarea {
+	resize: none;
+}
+/* need to make this scroll sideways or something */
+.review-container {
+	margin-top: 2em;
+}
+@media (min-width: 576px){
+	.jumbotron {
+		padding: 2rem 2rem;
+	}
+}
+.jumbotron {
+    margin-bottom: .1rem;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+.review-card {
+	display: inline-block;
+	padding: 0.5em 1em;
+	width:100%;
+	background-color:#a0a0a0;
+}
+.reviews input[type=text] {
+	margin-bottom: 0.5em;
+}
+/* user page */
+.user {
+	width: 75vw;
+	text-align: center;
+	margin: 5% auto;
+	text-align: left;	
+}
+.user img {
+	width: 25vw;
+	padding-right: 2em;
+	float: left;
+}
+/* -- Search Page -- */
+.search-container{
+	text-align: left;
+	margin: 5%;
+	float:left;
+	padding: 4em;
+	background-color: #f3f3f3;
+	border: 1px solid #c5c5c5;
+	border-radius: 4px;
+	width: 35%;
+}
+.search-card{
+	text-align: left;
+	margin: 5%;
+	float:right;
+	padding: 4em;
+	background-color: #f7f7f7;
+	border-radius: 4px;
+	width: 45%;
+}
+.programInfo {
+	text-align:left;
+	font-size:1.2em;
+}
+.programInfo .row:nth-of-type(even) {
+	background: #d8d8d8;
+}
+
+
+
+.tooltip-container {
+	position: relative;
+}
+
+.tooltip {
+	position: absolute;
+	right: -100%;
+	color: grey;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+.tooltip-container:hover .tooltip {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+

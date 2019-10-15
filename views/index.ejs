@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+
+<div id="schookBG"></div>
+
+<div class="index">
+<div id="indexMessageBox"></div><!-- ??? -->
+	<div class="indexWrapper">
+		<form action="/reviews" method="GET" autocomplete="off">
+			<div id="schoolForm" class="form schoolForm">
+				<h1>Find Your School</h1>
+				<input class="form-control" id="schoolInput" type="text" name="school" placeholder="Your School Name" />
+				<br />
+				<input class="btn btn-lg btn-primary" type="button" id="next" value="Next" />
+			</div>
+			<div id="programForm" class="form programForm">
+				<h1>Find Your Program</h1>
+				<input class="form-control" id="programInput" type="text" name="program" placeholder="program name" />
+				<br />
+				<input class="btn btn-lg btn-primary" id="submit" type="submit" value="Submit" />
+			</div>
+		</form>
+	</div>
+</div>
+
+<script src="/scripts/autocomplete.js"></script>
+<script src="/scripts/autocompleteAJAX.js"></script>
+
+<% include ./partials/footer %>

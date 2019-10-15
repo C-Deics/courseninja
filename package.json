@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RachelVoisin/CourseNinja.git"
+    "url": "git+https://github.com/C-Deics/courseninja.git"
   },
   "author": "Rachel Voisin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RachelVoisin/CourseNinja/issues"
+    "url": "https://github.com/C-Deics/CourseNinja/issues"
   },
-  "homepage": "https://github.com/RachelVoisin/CourseNinja#readme",
+  "homepage": "https://github.com/C-Deics/CourseNinja#readme",
   "dependencies": {
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
